@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: #f3f6fb;
+  padding: 3rem;
+}
+
+/* Header Section */
+#headerSection {
+  text-align: center;
+  color: #31414e;
+}
+
+#headerSection h1 {
+  padding-bottom: 0.5rem;
+}
+
+/* Cards Section */
+#cardsSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 1.5rem;
+}
+#cardsSection .card {
+  background-color: #ffffff;
+  margin: 0.5rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0.2px 8px 20px #00000026;
+}
+.totalIncome,
+.totalExpenses,
+.currentBalance {
+  padding-top: 1rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+.totalIncomeDiv {
+  border-top: 5px solid green;
+}
+.totalExpensesDiv {
+  border-top: 5px solid red;
+}
+.currentBalanceDiv {
+  border-top: 5px solid orange;
+}
+
+#inputValuesSection {
+  background-color: #ffffff;
+}
