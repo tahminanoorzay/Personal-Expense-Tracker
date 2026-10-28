@@ -35,22 +35,26 @@
       <div class="inputsSection">
         <div class="title">
           <h3>Tital</h3>
-          <input type="text" placeholder="e.g Internet Bill" />
+          <input
+            class="titleInput"
+            type="text"
+            placeholder="e.g Internet Bill"
+          />
         </div>
         <div class="type">
           <h3>Type</h3>
-          <select name="" id="">
+          <select name="" id="" class="typeInput">
             <option value="">Income</option>
             <option value="">Expense</option>
           </select>
         </div>
         <div class="amount">
           <h3>Amount</h3>
-          <input type="number" placeholder="Enter amount" />
+          <input class="amountInput" type="number" placeholder="Enter amount" />
         </div>
         <div class="category">
           <h3>Category</h3>
-          <select name="" id="">
+          <select name="" id="" class="categoryInput">
             <option value="">Salary</option>
             <option value="">Work</option>
             <option value="">Food</option>
@@ -62,7 +66,7 @@
         </div>
         <div class="date">
           <h3>Date</h3>
-          <input type="date" />
+          <input class="dateInput" type="date" />
         </div>
       </div>
       <button id="addTransactionBtn">Add Transaction</button>
@@ -72,8 +76,12 @@
     <div id="transactionsShowSection">
       <h2>Transactions</h2>
       <div class="showInputs">
-        <input type="search" placeholder="Search by title..." />
-        <select name="" id="">
+        <input
+          class="searchInput"
+          type="search"
+          placeholder="Search by title..."
+        />
+        <select name="" id="" class="showInsomeOrExpenseInput">
           <option value="">All Transactions</option>
           <option value="">Insome Only</option>
           <option value="">Expense Only</option>
@@ -83,21 +91,16 @@
           <div class="showItems">
             <table>
               <thead>
-                <th>Title</th>
-                <th>Type</th>
-                <th>Category</th>
-                <th>Amount</th>
-                <th>Date</th>
-                <th>Action</th>
+                <tr>
+                  <th>Title</th>
+                  <th>Type</th>
+                  <th>Category</th>
+                  <th>Amount</th>
+                  <th>Date</th>
+                  <th>Action</th>
+                </tr>
               </thead>
-              <tbody>
-                <td class="showTitle"></td>
-                <td class="showType"></td>
-                <td class="showCategory"></td>
-                <td class="showAmount"></td>
-                <td class="showDate"></td>
-                <td class="showAction"></td>
-              </tbody>
+              <tbody class="transactionsShowList"></tbody>
             </table>
             <p class="footerTxt">
               No transactions yet Add your first transaction above
