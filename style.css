@@ -10,6 +10,7 @@ body {
 }
 
 /* Header Section */
+
 #headerSection {
   text-align: center;
   color: #31414e;
@@ -20,15 +21,17 @@ body {
 }
 
 /* Cards Section */
+
 #cardsSection {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
 }
-#cardsSection .card {
+#cardsSection .card,
+#transactionsShowSection,
+#inputValuesSection {
   background-color: #ffffff;
-  margin: 0.5rem;
   padding: 2rem;
+  margin: 1rem;
   border-radius: 1rem;
   box-shadow: 0.2px 8px 20px #00000026;
 }
@@ -40,15 +43,76 @@ body {
   font-size: 1.8rem;
 }
 .totalIncomeDiv {
-  border-top: 5px solid green;
+  border-top: 5px solid #008000;
 }
 .totalExpensesDiv {
-  border-top: 5px solid red;
+  border-top: 5px solid #ff0000;
 }
 .currentBalanceDiv {
-  border-top: 5px solid orange;
+  border-top: 5px solid #ffa500;
 }
 
-#inputValuesSection {
-  background-color: #ffffff;
+/* Inputs Value Section */
+
+#inputValuesSection .inputsSection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+input,
+select {
+  width: 100%;
+  padding: 0.7rem;
+  box-sizing: border-box;
+  border: 1px solid #c0bfbf;
+}
+#inputValuesSection .inputsSection h3 {
+  padding: 0.5rem;
+}
+#inputValuesSection .inputsSection .date {
+  grid-column: 1 / -1;
+}
+#inputValuesSection button {
+  margin-top: 1rem;
+  padding: 0.9rem;
+  background-color: #31414e;
+  color: #f3f6fb;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+/* Show Values Section */
+
+#transactionsShowSection .showInputs {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.showTransactions {
+  grid-column: 1 / -1;
+  width: 100%;
+  overflow-x: auto;
+}
+.showTransactions table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.showTransactions th,
+.showTransactions td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+.showTransactions th {
+  background-color: #ebecee;
+}
+.showTransactions .footerTxt {
+  text-align: center;
+  padding: 1.5rem;
+  color: #484c55;
 }

@@ -32,36 +32,38 @@
     <!-- Inputs Value Section  -->
     <div id="inputValuesSection">
       <h2>Add a Transaction</h2>
-      <div class="title">
-        <h3>Tital</h3>
-        <input type="text" placeholder="e.g Internet Bill" />
-      </div>
-      <div class="date">
-        <h3>Type</h3>
-        <select name="" id="">
-          <option value="">Income</option>
-          <option value="">Expense</option>
-        </select>
-      </div>
-      <div class="amount">
-        <h3>Amount</h3>
-        <input type="number" placeholder="Enter amount" />
-      </div>
-      <div class="category">
-        <h3>Category</h3>
-        <select name="" id="">
-          <option value="">Salary</option>
-          <option value="">Work</option>
-          <option value="">Food</option>
-          <option value="">Bills</option>
-          <option value="">Education</option>
-          <option value="">Transport</option>
-          <option value="">Other</option>
-        </select>
-      </div>
-      <div class="date">
-        <h3>Date</h3>
-        <input type="date" />
+      <div class="inputsSection">
+        <div class="title">
+          <h3>Tital</h3>
+          <input type="text" placeholder="e.g Internet Bill" />
+        </div>
+        <div class="type">
+          <h3>Type</h3>
+          <select name="" id="">
+            <option value="">Income</option>
+            <option value="">Expense</option>
+          </select>
+        </div>
+        <div class="amount">
+          <h3>Amount</h3>
+          <input type="number" placeholder="Enter amount" />
+        </div>
+        <div class="category">
+          <h3>Category</h3>
+          <select name="" id="">
+            <option value="">Salary</option>
+            <option value="">Work</option>
+            <option value="">Food</option>
+            <option value="">Bills</option>
+            <option value="">Education</option>
+            <option value="">Transport</option>
+            <option value="">Other</option>
+          </select>
+        </div>
+        <div class="date">
+          <h3>Date</h3>
+          <input type="date" />
+        </div>
       </div>
       <button id="addTransactionBtn">Add Transaction</button>
     </div>
@@ -69,38 +71,38 @@
     <!-- Show Values Section  -->
     <div id="transactionsShowSection">
       <h2>Transactions</h2>
-      <search aria-placeholder="Search by title..."></search>
-      <select name="" id="">
-        <option value="">All Transactions</option>
-        <option value="">Insome Only</option>
-        <option value="">Expense Only</option>
-      </select>
+      <div class="showInputs">
+        <input type="search" placeholder="Search by title..." />
+        <select name="" id="">
+          <option value="">All Transactions</option>
+          <option value="">Insome Only</option>
+          <option value="">Expense Only</option>
+        </select>
 
-      <div class="showTransactions">
-        <div class="showItems">
-          <table>
-            <thead>
-              <th>Title</th>
-              <th>Type</th>
-              <th>Category</th>
-              <th>Amount</th>
-              <th>Date</th>
-              <th>Action</th>
-            </thead>
-          </table>
-          <table>
-            <tbody>
-              <td class="showTitle"></td>
-              <td class="showType"></td>
-              <td class="showCategory"></td>
-              <td class="showAmount"></td>
-              <td class="showDate"></td>
-              <td class="showAction"></td>
-            </tbody>
-          </table>
-          <p class="footerTxt">
-            No transactions yet Add your first transaction above
-          </p>
+        <div class="showTransactions">
+          <div class="showItems">
+            <table>
+              <thead>
+                <th>Title</th>
+                <th>Type</th>
+                <th>Category</th>
+                <th>Amount</th>
+                <th>Date</th>
+                <th>Action</th>
+              </thead>
+              <tbody>
+                <td class="showTitle"></td>
+                <td class="showType"></td>
+                <td class="showCategory"></td>
+                <td class="showAmount"></td>
+                <td class="showDate"></td>
+                <td class="showAction"></td>
+              </tbody>
+            </table>
+            <p class="footerTxt">
+              No transactions yet Add your first transaction above
+            </p>
+          </div>
         </div>
       </div>
     </div>
