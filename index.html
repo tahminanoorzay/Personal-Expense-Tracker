@@ -34,7 +34,7 @@
       <h2>Add a Transaction</h2>
       <div class="inputsSection">
         <div class="title">
-          <h3>Tital</h3>
+          <h3>Title</h3>
           <input
             class="titleInput"
             type="text"
@@ -44,8 +44,8 @@
         <div class="type">
           <h3>Type</h3>
           <select name="" id="" class="typeInput">
-            <option value="">Income</option>
-            <option value="">Expense</option>
+            <option value="Income">Income</option>
+            <option value="Expense">Expense</option>
           </select>
         </div>
         <div class="amount">
@@ -54,14 +54,14 @@
         </div>
         <div class="category">
           <h3>Category</h3>
-          <select name="" id="" class="categoryInput">
-            <option value="">Salary</option>
-            <option value="">Work</option>
-            <option value="">Food</option>
-            <option value="">Bills</option>
-            <option value="">Education</option>
-            <option value="">Transport</option>
-            <option value="">Other</option>
+          <select class="categoryInput">
+            <option value="Salary">Salary</option>
+            <option value="Work">Work</option>
+            <option value="Food">Food</option>
+            <option value="Bills">Bills</option>
+            <option value="Education">Education</option>
+            <option value="Transport">Transport</option>
+            <option value="Other">Other</option>
           </select>
         </div>
         <div class="date">
@@ -81,10 +81,12 @@
           type="search"
           placeholder="Search by title..."
         />
-        <select name="" id="" class="showInsomeOrExpenseInput">
-          <option value="">All Transactions</option>
-          <option value="">Insome Only</option>
-          <option value="">Expense Only</option>
+        <select name="" id="" class="showIncomeOrExpenseInput">
+          <option class="allTransactions" value="All Transactions">
+            All Transactions
+          </option>
+          <option class="incomeOnly" value="Income Only">Income Only</option>
+          <option class="expenseOnly" value="Expense Only">Expense Only</option>
         </select>
 
         <div class="showTransactions">
