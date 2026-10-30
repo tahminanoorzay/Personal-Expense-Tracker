@@ -5,7 +5,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 body {
-  background-color: #505257;
+  background-color: #caccd3;
   padding: 3rem;
 }
 
@@ -29,7 +29,7 @@ body {
 #cardsSection .card,
 #transactionsShowSection,
 #inputValuesSection {
-  background-color: #ada8a8;
+  background-color: #ddd5d5;
   padding: 2rem;
   margin: 1rem;
   border-radius: 1rem;

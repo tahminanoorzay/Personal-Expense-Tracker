@@ -20,16 +20,16 @@ addTransactionBtn.addEventListener("click", function () {
   const amountValue = amountInput.value;
   const dateValue = document.querySelector(".dateInput").value;
 
-  // if (
-  //   titleValue === "" ||
-  //   typeValue === "" ||
-  //   amountValue === "" ||
-  //   categoryValue === "" ||
-  //   dateValue === ""
-  // ) {
-  //   alert("Please fill in all fields!");
-  //   return;
-  // }
+  if (
+    titleValue === "" ||
+    typeValue === "" ||
+    amountValue === "" ||
+    categoryValue === "" ||
+    dateValue === ""
+  ) {
+    alert("Please fill in all fields!");
+    return;
+  }
 
   // Set values and show these
   const values = [titleValue, typeValue, categoryValue, amountValue, dateValue];
